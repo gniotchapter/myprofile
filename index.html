@@ -2,12 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
+    <!-- font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Archivo:ital@1&display=swap"
       rel="stylesheet"
@@ -16,25 +11,36 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:900|Ubuntu&display=swap"
       rel="stylesheet"
     />
+    <!-- Css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- Js -->
     <script
-      src="img\https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
     <script
-      src="img\https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
     <script
-      src="img\https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shreyanshu</title>
     <style>
       body {
+        overflow-x: hidden;
         font-family: "Montserrat", sans-serif;
       }
       a {
@@ -58,7 +64,7 @@
       }
 
       .shadow p-3 mb-5 bg-white rounded {
-        margin: 10px;
+        margin: px;
         background: rgb(255, 255, 255);
         box-shadow: #ffffff 4px 4px 8px, #4d4d4d -4px -4px 8px;
       }
@@ -68,6 +74,8 @@
       }
       video {
         align-self: center;
+        height: 200px;
+        width: 150px;
       }
 
       .profilepic {
@@ -110,7 +118,6 @@
   </head>
   <body>
     <!-- Navbar -->
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <a class="navbar-brand" href="#">Shreyanshu</a>
       <button
@@ -145,8 +152,8 @@
         </ul>
       </div>
     </nav>
-    <!-- home -->
 
+    <!-- home -->
     <div class="row" style="padding-bottom: 30vh; padding-top: 5vh; margin: 0;">
       <div
         class="col-lg-5 col-md-12 site-title"
@@ -171,7 +178,6 @@
     </div>
 
     <!-- About -->
-
     <div
       id="about"
       class="container-fluid"
@@ -199,9 +205,9 @@
         technology field.
       </div>
     </div>
+
     <!-- schools -->
     <h2 style="margin-top: 20vh; text-align: center;">Education</h2>
-
     <div
       class="card-group"
       style="
@@ -247,7 +253,6 @@
     </div>
 
     <!-- Skill -->
-
     <div
       class="container"
       style="background-color: black; min-width: 90vw; min-height: 100vh;"
@@ -334,7 +339,6 @@
     </div>
 
     <!-- project section -->
-
     <div class="container" id="project" style="min-width: 90vw; padding: 10vh;">
       <h2 style="text-align: center;">Projects</h2>
       <div class="container" style="padding-top: 5vh; padding-bottom: 5vh;">
@@ -387,7 +391,7 @@
           </div>
           <div class="col mb-4">
             <div class="card shadow p-3 mb-5 bg-white rounded">
-              <video width="240" height="240" controls>
+              <video width="auto" height="240" controls>
                 <source src="img\face-recognition.mp4" type="video/mp4" />
               </video>
 
@@ -409,7 +413,7 @@
 
           <div class="col mb-4">
             <div class="card shadow p-3 mb-5 bg-white rounded">
-              <video width="240" height="240" controls>
+              <video width="auto" height="240" controls>
                 <source src="img\object-detection.mp4" type="video/mp4" />
               </video>
 
@@ -431,6 +435,7 @@
         </div>
       </div>
     </div>
+
     <!-- footer -->
     <div
       id="contact"
@@ -449,9 +454,12 @@
       </h2>
       <div
         class="row"
-        style="font-family: 'Montserrat', sans-serif; color: #fff;"
+        style="
+          font-family: 'Montserrat', sans-serif;
+          overflow: hidden;
+          color: #fff;
+        "
       >
-        <div class="col-2 site-title"></div>
         <div
           class="col-4 site-title"
           style="justify-self: start; padding-left: 10vw; padding-bottom: 10vh;"
@@ -476,27 +484,31 @@
           <h4>
             Uttar Pradesh
           </h4>
-          <img
-            width="25px"
-            height="25px"
-            src="img\call.jpg"
-            alt=""
-            style="margin-right: 1vw; padding-bottom: 1vh;"
-          />9504315538
-          <br />
-          <img
-            width="25px"
-            height="25px"
-            src="img\mail.jpg"
-            alt=""
-            style="margin-right: 2vw;"
-          />
-          <h6>shreyanshuankit@gamil.com</h6>
         </div>
-        <div class="col-6 site-title"></div>
+      </div>
+      <div class="row" style="justify-content: center; padding-top: 5vh;">
+        <img
+          width="25px"
+          height="25px"
+          src="img\call.jpg"
+          alt=""
+          style="margin-right: 1vw; padding-bottom: 1vh;"
+        />9504315538
+      </div>
+      <div
+        class="row"
+        style="justify-content: center; padding-bottom: 5vh; padding-top: 5vh;"
+      >
+        <img
+          width="25px"
+          height="25px"
+          src="img\mail.jpg"
+          alt=""
+          style="margin-left: 2vw;"
+        />
+        <h6>shreyanshuankit@gamil.com</h6>
       </div>
       <div class="row">
-        <div class="col-1"></div>
         <div class="col-2">
           <a href="https://www.facebook.com/shreyanshuankit" target="_blank">
             <img src="img\fb.jpg" alt="..." />
