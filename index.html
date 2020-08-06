@@ -36,6 +36,11 @@
       crossorigin="anonymous"
     ></script>
 
+    <script
+      src="https://kit.fontawesome.com/e2723e486c.js"
+      crossorigin="anonymous"
+    ></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shreyanshu</title>
     <style>
@@ -72,6 +77,13 @@
         background: rgb(255, 255, 255);
         box-shadow: #4d4d4d 4px 4px 8px, #ffffff -4px -4px 8px;
       }
+
+      .btnlnk {
+        color: white;
+      }
+      .btnlnk:hover {
+        color: #000;
+      }
       video {
         align-self: center;
         height: 200px;
@@ -99,6 +111,43 @@
           opacity: 1;
           filter: blur(0);
           transform: scale(1, 1);
+        }
+      }
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .icon a {
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        background-color: #eee;
+        border-radius: 25px;
+        margin: 1vw;
+        text-align: center;
+        line-height: 90px;
+        font-size: 50px;
+        border: 3px solid #eee;
+        color: #333;
+        transition: 0.3s;
+      }
+
+      .icon a:hover {
+        animation: border 0.6s alternate infinite linear;
+        background-color: #333;
+        color: #eee;
+      }
+
+      @keyframes border {
+        0% {
+          border: 3px solid lightgreen;
+        }
+        50% {
+          border: 3px solid salmon;
+        }
+        100% {
+          border: 3px solid skyblue;
         }
       }
     </style>
@@ -193,10 +242,19 @@
       <div class="row">
         <h1 style="padding-top: 5vh;">About me</h1>
       </div>
+      <div class="row">
+        <button
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1pzHj5RIEfk1NPahXqeNQO7KbKmF1NtqY/view?usp=sharing')"
+          class="btn btn-outline-light"
+        >
+          Resume
+        </button>
+      </div>
       <div style="margin-top: 10vh; margin-left: 30vw;">
         Hello I'm Shreyanshu, an IT student in GNIOT, Greater Noida.
         <br />
-        I enjoy leaning new technology and love to try them.<br />
+        I enjoy learning new technology and love to try them.<br />
         I have good command in Python and Andriod app devlopment,
         <br />
         and intermediate in Web devlopment.
@@ -277,6 +335,7 @@
                   <li>Cpp</li>
                   <li>C</li>
                   <li>JavaScript</li>
+                  <li>Kotlin</li>
                 </ul>
               </div>
             </div>
@@ -442,7 +501,7 @@
       class="container-fluid"
       style="
         color: #fff;
-        min-height: 100vh;
+        min-height: 50vh;
         max-width: 70vw;
         padding-top: 5vh;
         padding-bottom: 10vh;
@@ -461,19 +520,8 @@
         "
       >
         <div
-          class="col-4 site-title"
+          class="col-6 site-title"
           style="justify-self: start; padding-left: 10vw; padding-bottom: 10vh;"
-        >
-          <img src="img\photo.jpg" alt="..." class="img-thumbnail" />
-        </div>
-        <div
-          class="col-4 site-title"
-          style="
-            justify-self: start;
-            padding-left: 3vw;
-            padding-top: 5vh;
-            padding-bottom: 5vh;
-          "
         >
           <h4>
             Knowledge Park 3
@@ -485,58 +533,45 @@
             Uttar Pradesh
           </h4>
         </div>
+        <div
+          class="col-6 site-title"
+          style="
+            justify-self: start;
+            padding-left: 3vw;
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+          "
+        >
+          <img
+            width="25px"
+            height="25px"
+            src="img\call.jpg"
+            alt=""
+            style="margin-right: 1vw; padding-bottom: 1vh;"
+          />9504315538<br />
+          @ shreyanshuankit@gamil.com
+        </div>
       </div>
-      <div class="row" style="justify-content: center; padding-top: 5vh;">
-        <img
-          width="25px"
-          height="25px"
-          src="img\call.jpg"
-          alt=""
-          style="margin-right: 1vw; padding-bottom: 1vh;"
-        />9504315538
-      </div>
-      <div
-        class="row"
-        style="justify-content: center; padding-bottom: 5vh; padding-top: 5vh;"
-      >
-        <img
-          width="25px"
-          height="25px"
-          src="img\mail.jpg"
-          alt=""
-          style="margin-left: 2vw;"
-        />
-        <h6>shreyanshuankit@gamil.com</h6>
-      </div>
-      <div class="row">
-        <div class="col-2">
-          <a href="https://www.facebook.com/shreyanshuankit" target="_blank">
-            <img src="img\fb.jpg" alt="..." />
-          </a>
-        </div>
-        <div class="col-2">
-          <a href="https://github.com/shreyanshuankit" target="_blank">
-            <img src="img\git.jpg" />
-          </a>
-        </div>
-        <div class="col-2">
-          <a
-            href="https://www.linkedin.com/in/shreyanshuankit/"
-            target="_blank"
-          >
-            <img src="img\Linkedin.jpg" />
-          </a>
-        </div>
-        <div class="col-2">
-          <a href="https://www.instagram.com/shreyanshuankit/" target="_blank">
-            <img src="img\insta.jpg" alt="..." />
-          </a>
-        </div>
-        <div class="col-2">
-          <a href="https://twitter.com/shreyanshuanki" target="_blank">
-            <img src="img\twitter.jpg" alt="..." />
-          </a>
-        </div>
+
+      <div class="icon">
+        <a href="https://www.facebook.com/shreyanshuankit/" target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://www.instagram.com/shreyanshuankit/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://twitter.com/shreyanshuanki" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://github.com/shreyanshuankit/" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/shreyanshuankit/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/shreyanshuankit/" target="_blank"
+          ><i class="fab fa-hackerrank"></i
+        ></a>
       </div>
     </div>
   </body>
